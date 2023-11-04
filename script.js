@@ -9,7 +9,7 @@ calculatorForm.addEventListener("submit", (e) => {
 
     let width = (parseFloat(right.value)-parseFloat(left.value))/200;
     let height = (parseFloat(bottom.value)-parseFloat(top.value))/200;
-    let X = 76.2 + ((152.4 - width)/2) - ((30480-right.value)/200);
+    let X = (76.2 + ((152.4 - width)/2)) - ((30480-right.value)/200);
     let Y = (50.8 + ((101.6 - height)/2)) - ((20320-bottom.value)/200);
 
     let response = document.getElementById("response");
